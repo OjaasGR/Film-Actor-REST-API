@@ -1,0 +1,10 @@
+use lesgo;
+
+create database lesgo;
+create table actor(id int primary key,name varchar(30),age int,remuneration int);
+create table movies(id int primary key,name varchar(30),genre varchar(30),year int,actor_id int,actor_name varchar(30), foreign key(actor_id) references actor(id));
+
+select *from actor;
+
+select *from movies;
+
